@@ -4,7 +4,7 @@ This repository provides the models and IOU evaluator for the **Cloud Robotics**
 
 ## Overview
 
-Cld Robotics track teams are challenged to develop robust manipulation solutions using remote access to the cloud robotics platform [CloudGripper](https://cloudgripper.org) at KTH Royal Institute of Technology.
+Cloud Robotics track teams are challenged to develop robust manipulation solutions using remote access to the cloud robotics platform [CloudGripper](https://cloudgripper.org) at KTH Royal Institute of Technology.
 
 The API to interact with the robot is available at: https://github.com/cloudgripper/cloudgripper-api
 
