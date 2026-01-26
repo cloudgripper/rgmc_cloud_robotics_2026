@@ -21,12 +21,16 @@ This track focuses on **generalization and robustness** properties of the method
 
 The following objects will be available in the robot's environment during **Task 1**:
 
-Note: the cube and cylinder models have a hexagonal extrude used for resetting. The evluation is performed only on the bottom face of the model
+**Note about the models:**
+- The cube and cylinder models have a hexagonal extrude used for resetting. E
+- Evaluation is performed only on the bottom face of the model. 
+- The models have slots for M3 nuts, to change the weight distribution of the object. 
+- 3D prints of the models will be in red PLA. 
 
 | Model | Filename | Description |
 |-------|----------|-------------|
-| Cube | `cube.stl` | Square prism with face area of $30mm \times 30mm$ |
-| Cylinder | `cylinder.stl` | Cylinder with base diameter of $30mm$ |
+| Cube | `square_profile.stl` | Square prism with face area of $30mm \times 30mm$ |
+| Cylinder | `circle_profile.stl` | Cylinder with base diameter of $30mm$ |
 | T-Shape | `T.stl` | T-shaped extrude with stroke width of 10mm and ovalrall bounds of $30mm \times 30mm$|
 
 ### IOU Evaluator
