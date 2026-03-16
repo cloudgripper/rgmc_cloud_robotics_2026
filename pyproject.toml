@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rgmc-cloud-robotics-2026"
+version = "0.1.0"
+description = "Supporting repo for IEEE ICRA 2026 Cloud Robotics Competition"
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "pyyaml",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -37,18 +37,15 @@ CIRCLE_CORNERS = np.array([
 # T Corners
 # ================================
 T_CORNERS = np.array([
-    # Top Horizontal Bar
-    [-T_TOTAL_WIDTH_MM/2, -T_TOTAL_HEIGHT_MM/2, 0],         # P1: Top-Left Outer
-    [ T_TOTAL_WIDTH_MM/2, -T_TOTAL_HEIGHT_MM/2, 0],         # P2: Top-Right Outer
-    [ T_TOTAL_WIDTH_MM/2, -T_TOTAL_HEIGHT_MM/2 + T_THICKNESS_MM, 0],     # P3: Top-Right Inner (Under the bar)
-    
-    # Vertical Stem (Connection)
-    [ T_THICKNESS_MM/2, -T_TOTAL_HEIGHT_MM/2 + T_THICKNESS_MM, 0],     # P4: Stem Right Top
-    [ T_THICKNESS_MM/2,  T_TOTAL_HEIGHT_MM/2, 0],         # P5: Stem Right Bottom
-    [-T_THICKNESS_MM/2,  T_TOTAL_HEIGHT_MM/2, 0],         # P6: Stem Left Bottom
-    [-T_THICKNESS_MM/2, -T_TOTAL_HEIGHT_MM/2 + T_THICKNESS_MM, 0],     # P7: Stem Left Top
-    
-    # Closing the loop
-    [-T_TOTAL_WIDTH_MM/2, -T_TOTAL_HEIGHT_MM/2 + T_THICKNESS_MM, 0]      # P8: Top-Left Inner (Under the bar)
-], dtype=np.float32)
+    # Right Vertical Bar
+    [ T_TOTAL_WIDTH_MM/2 - T_THICKNESS_MM,         -T_TOTAL_HEIGHT_MM/2, 0],  # P1: Top-Left of Bar
+    [ T_TOTAL_WIDTH_MM/2,                          -T_TOTAL_HEIGHT_MM/2, 0],  # P2: Top-Right Outer
+    [ T_TOTAL_WIDTH_MM/2,                           T_TOTAL_HEIGHT_MM/2, 0],  # P3: Bottom-Right Outer
+    [ T_TOTAL_WIDTH_MM/2 - T_THICKNESS_MM,          T_TOTAL_HEIGHT_MM/2, 0],  # P4: Bottom-Left of Bar
 
+    # Horizontal Stem (Connection)
+    [ T_TOTAL_WIDTH_MM/2 - T_THICKNESS_MM,          T_THICKNESS_MM/2,    0],  # P5: Stem Bottom-Right
+    [-T_TOTAL_WIDTH_MM/2,                           T_THICKNESS_MM/2,    0],  # P6: Stem Bottom-Left Outer
+    [-T_TOTAL_WIDTH_MM/2,                          -T_THICKNESS_MM/2,    0],  # P7: Stem Top-Left Outer
+    [ T_TOTAL_WIDTH_MM/2 - T_THICKNESS_MM,         -T_THICKNESS_MM/2,    0],  # P8: Stem Top-Right
+], dtype=np.float32)
